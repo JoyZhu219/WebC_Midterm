@@ -1713,7 +1713,7 @@ p.bold{
 }
 /*----------------------------------------*/
 /*  8. Properties Area
-/*----------------------------------------*/
+
 .properties  {
     margin-bottom: 10px;
     padding-bottom: 150px;
@@ -1734,6 +1734,7 @@ p.bold{
 .section-heading.if-bg-colorful h2>span {
     color: #fff;
 }
+/*----------------------------------------*/
 /*----------------------------------------*/
 /*  9. Single Area
 /*----------------------------------------*/
@@ -2018,236 +2019,347 @@ p.bold{
     border: none;
 }
 
-/*Widget Date Focus*/
-.widget.date-focus span {
-    margin-bottom: 10px;
-    font-style: italic;
-    color: #0089e9;
+/*----------------------------------------*/
+/*  11. Types Area
+/*----------------------------------------*/
+.two .single-service-icon i {
+    color: #bbbbbb;
+    font-size: 35px;
+    line-height: 78px;
 }
-/*----------------------------------------*/
-/*  11.  Area
-/*----------------------------------------*/
-.map-area{position: relative}
-.map-area:after{
+.two .single-service-icon a{
+    border: 1px solid #bbbbbb;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin: auto;
+}
+.single-service-icon{margin-bottom: 27px;}
+.single-service-content h4{
+    font-size: 18px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.single-service-content p{
+    font-size: 14px;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.single-service{
+    padding: 30px 25px 25px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.two .single-service {padding: 70px 30px}
+.two .single-service:hover i, .two .single-service-content h4:hover a{color: #3ba5f7}
+.two .single-service{box-shadow: 0px 1px 5px 0px rgba(225, 225, 225, 0.3); position: relative}
+.two .single-service:after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #bbbbbb;
+    font-size: 150px;
+    content: "";
+    font-family: "Material-Design-Iconic-Font";
+    background: #fff;
+}
+.single-service:hover {
+  box-shadow: 0px 6px 15px 0px rgba(59, 59, 59, 0.21);
+}
+.single-service-icon-three{
+    background: #F6F6F6;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-table;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 14.25px 0.75px rgba(51, 51, 51, 0.15);
+    z-index: 2;
+    position: relative;
+}
+.single-service-icon-three a{
+    display: table-cell;
+    vertical-align: middle;
+}
+.single-service-content-three h4{
+    font-size: 18px;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    padding-bottom: 18px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-service-content-three h4:hover a{
+    color: #fff;
+}
+.single-service-content-three p{
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.single-service-content-three h4:after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 50px;
+    background: #DDDDDD;
+    content: "";
+    text-align: center;
+    margin: auto;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-service-three{
+    border-top: 1px solid #F6F6F6;
+    border-left: 1px solid #F6F6F6;
+    padding: 45px 25px;
+    width: 33.3333%;
+    float: left;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.service-area.three .single-service-three:nth-child(3), .service-area.three .single-service-three:nth-child(6){
+    border-right: 1px solid #F6F6F6;
+}
+.service-area.three .single-service-three:nth-child(4), .service-area.three .single-service-three:nth-child(5), .service-area.three .single-service-three:nth-child(6){
+    border-bottom: 1px solid #F6F6F6;
+}
+.single-service-three:hover{
+    position: relative;
+    background: rgba(0, 0, 0, 0) url("img/banner/service.jpg") no-repeat scroll center center / cover ;
+    transition: all 0.5s ease 0s;
+}
+.single-service-three:hover::after{
     position: absolute;
     left: 0;
     top: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     content: "";
+    background: rgba(0, 0, 0, 0.4);
 }
-.three .map-area:after{background: none}
-.map-left, .touch-right{
-    margin-top: 75px;
-    z-index: 9;
+.single-service-three:hover h4, .single-service-three:hover p{
+    color: #fff;
+    z-index: 1;
     position: relative;
 }
-.map-left h4, .touch-right h4{
-    font-size: 18px;
+.single-service-three:hover h4:after{
+    background: #fff;
+    z-index: 1;
+}
+/*----------------------------------------*/
+/*  12. Step Area
+/*----------------------------------------*/
+.who-area{
+    background-image: url(img/banner/banner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 0 100px;
+}
+.about-content {
+  margin-top: 11px;
+}
+.who-two .who-content {
+  margin-top: 26px;
+}
+.who-area .video-icon i {color: #3ba5f7}
+.about-area.three .video-icon i:hover{background: #3ba5f7; color: #fff}
+.who-content h3{
+    font-size: 36px;
+    color: #555555;
     font-weight: 700;
-    color: #bbbbbb;
     font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
     position: relative;
-    margin-bottom: 25px;
-    padding-bottom: 25px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    padding-bottom: 30px;
 }
-.map-left h4:after, .touch-right h4:after{
+.who-content h3:after{
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #444444;
+    background: #BBBBBB;
+    width: 100px;
     height: 1px;
-    width: 200px;
     content: "";
 }
-.map-content{margin-top: -440px}
-ul.touch i{
-    font-size: 20px;
-    color: #bbbbbb;
-    margin-right: 25px;
-}
-ul.touch li{
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #bbbbbb;
-}
-.footer-social ul li{text-align: center}
-.footer-social.two ul li:hover a{background: #3ba5f7; border: 1px solid #3ba5f7 }
-.footer-bottom.two{
-    background: #fff;
-}
-.footer-bottom.two p, .footer-bottom.two a{
-    color: #222222;
-}
-/*----------------------------------------*/
-/*  12. Blog Area
-/*----------------------------------------*/
-.three.blog-area{
-    background-image: url(img/banner/blog.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    position: relative;
-    background-attachment: fixed;
-}
-.three.blog-area:after{
+.about-video{position: relative;}
+.about-video:after{
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     content: "";
 }
-.blog-area.three .single-blog-img {
-    position: relative;
-    -webkit-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
-    z-index: 1;
+.about-video > img {
+  width: 100%;
 }
-.blog-area.three .single-blog-img:after{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(14, 95, 217, 0.8);
-    content: "";
-    opacity: 0;
+.video-icon a {
+  background: #ffffff none repeat scroll 0 0;
+  border-radius: 50%;
+  bottom: 0;
+  font-size: 24px;
+  height: 50px;
+  left: 0;
+  line-height: 50px;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 50px;
+  color: #3ba5f7;
+    z-index: 99;
 }
-.blog-area.three .single-blog:hover .single-blog-img:after, .blog-area.three .single-blog:hover .blog-hover{opacity: 1}
-.blog-area.three .blog-hover{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 50%;
-    margin: auto;
-    margin-top: -30px;
-    content: "";
-    display: inline-table;
-    opacity: 0;
-    text-align: center;
-    z-index: 2;
+.video-icon a:hover {
+  background: #3ba5f7 none repeat scroll 0 0;
+  color: #fff;
 }
-.blog-area.three .blog-hover i{
-    font-size: 20px;
-    color: #fff;
-    border-radius: 50%;
-    background: #3BA5F7;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    border: 1px solid #145E9F;
-    box-shadow: 0px 0px 9px 1px rgba(17, 17, 17, 0.3);
-    z-index: 2;
-    position: relative;
+
+.video-icon a:hover i{
+  color: #fff;
 }
-.blog-area.three .blog-hover i:hover{
-    background: #fff;
-    color: #3BA5F7;
+
+.about-video .play i{
 }
-.blog-area.three .single-blog-content{background: #fff; padding: 20px 25px 30px 30px; z-index: 1; position: relative}
-.blog-area.three .single-blog-content h3{
-    margin-bottom: 10px;
-    -webkit-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
+.section-tab-item{
+    display: none;
 }
-.blog-area.three .single-blog-content h3 a{
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    color: #444444;
-    text-transform: uppercase;
+.section-tab-item.active{
+    display: block;
 }
-.blog-area.three .single-blog-content p{
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Open Sans', sans-serif;
-    color: #333333;
-    margin-bottom: 20px;
-}
-.blog-area.three .single-blog-content h3:hover a{
-    color: #0E5FD9;
-}
-.blog-area.three .single-blog-content ul{
+.section-tab-menu ul{
     margin: 0;
     padding: 0;
     list-style: none;
+    float: left;
 }
-.blog-area.three .single-blog-content ul li{
+.section-tab-menu ul li{
     display: inline-block;
-    font-size: 12px;
-    color: #999999;
-    margin-right: 10px;
-}
-.blog-area.three .single-blog-content ul li i{
-    font-size: 16px;
-    color: #666666;
-    margin-right: 5px;
-    top: 2px;
+    margin-right: 50px;
     position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
 }
-.blog-title{z-index: 3; position: relative}
-.blog-title h3{
-    font-size: 36px;
-    color: #fff;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-.blog-title p{
-    font-size: 16px;
-    color: #fff;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 70px;
-}
-/*----------------------------------------*/
-/*  13. Touch Area
-/*----------------------------------------*/
-.touch-area{
-    border-top: 1px solid #EEEEEE;
-    position: relative;
-}
-.touch-area:after{
+.section-tab-menu ul li:after{
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    box-shadow: 0px 0px 9px 1px rgba(150, 150, 150, 0.3);
+    left: 0;
+    bottom: 0;
+    background: #3ba5f7;
+    width: 0px;
+    height: 1px;
     content: "";
 }
-.touch-left{
-    padding: 80px 0 80px;
-    margin-right: 80px;
+.section-tab-menu ul li:last-child{
+    margin-right: 0px;
 }
-.touch-logo{
-    margin-bottom: 30px;
-}
-.touch-left p.border{
-    border-bottom: 1px solid #DDDDDD;
-    padding-bottom: 40px;
-    margin-bottom: 25px;
-}
-.touch-left p.copy, .touch-left a{
-    font-size: 12px;
-    color: #222222;
-    font-family: 'Open Sans', sans-serif;
-}
-.touch-right h4{
+.section-tab-menu ul li a{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
     color: #666666;
-    padding-bottom: 23px;
+    text-transform: uppercase;
 }
-.touch-right ul.touch i, .touch-right ul.touch li, .touch-right .footer-social.two ul li i{color: #666666;}
-.touch-right .footer-social.two ul li:hover i{color: #fff;}
-.touch-right .footer-social.two ul li a{border: 1px solid #DDDDDD;}
+.section-tab-menu ul li:hover a, .section-tab-menu ul li.active a{
+    color: #3ba5f7;
+}
+.section-tab-menu ul li:hover::after, .section-tab-menu ul li.active::after{
+    width: 50px;
+}
+.single-tab p{
+    color: #555555;
+}
+.single-tab p:first-child{margin-bottom: 20px}
+/*----------------------------------------*/
+/*  13. Top Resort Area
+/*----------------------------------------*/
+.single-member-content p{
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.single-member-content.top h4{margin-bottom: 10px}
+.single-member-content.top p{margin-bottom: 0px}
+.single-member-content h4{
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.single-member-img{
+    position: relative;
+}
+.single-member-content {
+    background: #fff none repeat scroll 0 0;
+    box-shadow: 0 0 13.2px 1.8px rgba(59, 59, 59, 0.1);
+    content: "";
+    height: 115px;
+    left: 0;
+    padding: 32px 0 36px;
+    position: absolute;
+    top: 0;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    transform: translateY(-115px);
+}
+.single-member: hover .single-member-content{
+    transform: translateY(0px)
+}
+.single-member-content.bottom {
+    transform: translateY(108px);
+    bottom: 0;
+    top: auto;
+}
+.single-member:hover .single-member-content{
+    transform: translateY(0px);
+}
+.single-member:hover .single-member-content.bottom{
+    transform: translateY(230px);
+}
+.single-member{
+    box-shadow: 0px 0px 13.2px 1.8px rgba(59, 59, 59, 0.1);
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    overflow: hidden;
+    padding-bottom: 108px
+}
+.member-img{
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.single-member:hover .member-img{transform: translateY(108px)}
 /*----------------------------------------*/
 /*  14. Table Area
 /*----------------------------------------*/
