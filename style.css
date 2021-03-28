@@ -85,7 +85,7 @@ label {
 p {
     font-size: 14px;
     line-height: 24px;
-    color: #666666;
+    color: #d9d2d2;
     font-family: 'Open Sans', sans-serif;
 }
 ul{
@@ -1176,7 +1176,7 @@ a, i, button, img, input, span, *::before, *::after {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: url(img/icon/title.png);
+    /* background: url(img/icon/title.png); */
     width: 100px;
     height: 5px;
     content: "";
@@ -1513,7 +1513,8 @@ p.bold{
 .post-about .read-more {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    color: #fe931f;
+    /* color: #fe931f; */
+    color: #85a3c4;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
@@ -1584,7 +1585,7 @@ p.bold{
 }
 .portfolio-detail-info h6{
     font-size: 14px;
-    color: #bbbbbb;
+    color: #fff;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -1602,7 +1603,7 @@ p.bold{
     position: absolute;
     left: 0;
     bottom: 0;
-    background: url(img/icon/title.png);
+    /* background: url(img/icon/title.png); */
     width: 100px;
     height: 5px;
     content: "";
@@ -1634,7 +1635,7 @@ p.bold{
     margin-right: 0px;
 }
 .portfolio-menu ul li:hover, .portfolio-menu ul li.active{
-    color: #fc7f0b;
+    color: #85a3c4;
 }
 .single-portfolio{position: relative}
 .single-portfolio-item {
@@ -1755,7 +1756,7 @@ p.bold{
 }
 .single-item .post-metadata a {
     text-transform: uppercase;
-    color: #fe931f;
+    color: #85a3c4;
     padding-right: 15px;
 }
 .single-item .post-metadata a:hover {
@@ -1799,7 +1800,7 @@ p.bold{
     text-align: center;
     color: #fff;
     font-style: italic;
-    background-color: rgba(16, 32, 43, .9);
+    background-color:#85a3c4;
     padding: 30px 50px;
     border-radius: 30px 0;
     border: 2px solid #fff;
@@ -1998,7 +1999,7 @@ p.bold{
     transform: translateY(-50%);
 }
 .widget .place-view .place-overlay .place-info a {
-    background-color: #fe931f;
+    background-color: #85a3c4;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     color: #fff;
